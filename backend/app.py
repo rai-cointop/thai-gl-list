@@ -1,6 +1,6 @@
-from flask import Flask, jsonify, send_from_directory, render_template
-from flask_cors import CORS
+from flask import Flask, jsonify, render_template
 import pandas as pd
+from flask_cors import CORS
 
 app = Flask(__name__, static_folder='static', template_folder='templates')
 CORS(app)
@@ -22,14 +22,11 @@ def get_details(cp_name):
         'individuals': individuals
     })
 
-# ここが Vue アプリのエントリーポイント
-@app.route('/')
-def serve_vue():
-    return render_template('index.html')
-
-# その他の Vue ルーティング（SPA対応）
+# Vue の SPA を返す
+@app.route('/', defaults={'path': ''})
 @app.route('/<path:path>')
-def static_proxy(path):
+def catch_all(path):
+    # /assets/* や /images/* などの静的ファイルは除外されて自動で配信される
     return render_template('index.html')
 
 if __name__ == '__main__':
