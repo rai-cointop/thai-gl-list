@@ -30,11 +30,13 @@ import { useRoute } from 'vue-router'
 const route = useRoute()
 const data = ref(null)
 
+const apiBaseUrl = import.meta.env.VITE_API_BASE_URL
+
 const cpWorks = ref('')
 const cpSongs = ref('')
 
 onMounted(async () => {
-  const res = await fetch(`http://localhost:5000/api/details/${route.params.cpName}`)
+  const res = await fetch(`${apiBaseUrl}/api/details/${route.params.cpName}`)
   data.value = await res.json()
 
   if (data.value.cp) {
