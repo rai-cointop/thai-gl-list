@@ -6,13 +6,25 @@ import os
 app = Flask(__name__, static_folder='static', static_url_path='')
 CORS(app)
 
+# CSV読み込み
 individual_df = pd.read_csv('./data/individual_data.csv')
 cp_df = pd.read_csv('./data/cp_data.csv')
 
+# トップページ（index.html）を返す
 @app.route('/')
-def serve_index():
+def index():
     return send_from_directory(app.static_folder, 'index.html')
 
+# 静的ファイルのルーティング（Vueのルーティングに対応）
+@app.route('/<path:path>')
+def static_proxy(path):
+    file_path = os.path.join(app.static_folder, path)
+    if os.path.exists(file_path):
+        return send_from_directory(app.static_folder, path)
+    else:
+        return send_from_directory(app.static_folder, 'index.html')
+
+# APIエンドポイント
 @app.route('/api/individuals')
 def get_individuals():
     return jsonify(individual_df.to_dict(orient='records'))
@@ -26,6 +38,7 @@ def get_details(cp_name):
         'individuals': individuals
     })
 
+# Render 対応: ポート設定
 if __name__ == '__main__':
-    port = int(os.environ.get("PORT", 5000))  # Render が提供するポートを取得
+    port = int(os.environ.get('PORT', 5000))
     app.run(host='0.0.0.0', port=port)
