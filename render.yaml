@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: thai-gl-list
+    env: python
+    buildCommand: |
+      chmod +x build-and-copy.sh
+      ./build-and-copy.sh
+    startCommand: python backend/app.py
+    envVars:
+      - key: PORT
+        value: 10000
