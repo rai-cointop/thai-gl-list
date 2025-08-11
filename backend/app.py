@@ -1,9 +1,8 @@
-from flask import Flask, jsonify, send_from_directory
+from flask import Flask, jsonify, send_from_directory, render_template
 from flask_cors import CORS
 import pandas as pd
-import os
 
-app = Flask(__name__, static_folder='static', static_url_path='')
+app = Flask(__name__, static_folder='static', template_folder='templates')
 CORS(app)
 
 # CSV読み込み
@@ -23,14 +22,15 @@ def get_details(cp_name):
         'individuals': individuals
     })
 
-# フロントエンドのルーティング（index.htmlを返す）
-@app.route('/', defaults={'path': ''})
+# ここが Vue アプリのエントリーポイント
+@app.route('/')
+def serve_vue():
+    return render_template('index.html')
+
+# その他の Vue ルーティング（SPA対応）
 @app.route('/<path:path>')
-def serve_frontend(path):
-    if path != "" and os.path.exists(os.path.join(app.static_folder, path)):
-        return send_from_directory(app.static_folder, path)
-    else:
-        return send_from_directory(app.static_folder, 'index.html')
+def static_proxy(path):
+    return render_template('index.html')
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=10000)
