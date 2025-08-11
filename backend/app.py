@@ -1,19 +1,23 @@
-from flask import Flask, jsonify
+from flask import Flask, jsonify, send_from_directory
 from flask_cors import CORS
 import pandas as pd
+import os
 
-app = Flask(__name__)
+app = Flask(__name__, static_folder='static', static_url_path='')
 CORS(app)
 
-# CSV読み込み
 individual_df = pd.read_csv('./data/individual_data.csv')
 cp_df = pd.read_csv('./data/cp_data.csv')
 
-@app.route('/api/individuals', methods=['GET'])
+@app.route('/')
+def serve_index():
+    return send_from_directory(app.static_folder, 'index.html')
+
+@app.route('/api/individuals')
 def get_individuals():
     return jsonify(individual_df.to_dict(orient='records'))
 
-@app.route('/api/details/<cp_name>', methods=['GET'])
+@app.route('/api/details/<cp_name>')
 def get_details(cp_name):
     cp_info = cp_df[cp_df['CP名'] == cp_name].to_dict(orient='records')
     individuals = individual_df[individual_df['CP名'] == cp_name].to_dict(orient='records')
@@ -23,4 +27,5 @@ def get_details(cp_name):
     })
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    port = int(os.environ.get("PORT", 5000))  # Render が提供するポートを取得
+    app.run(host='0.0.0.0', port=port)
