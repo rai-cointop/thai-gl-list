@@ -30,18 +30,25 @@ import { useRoute } from 'vue-router'
 const route = useRoute()
 const data = ref(null)
 
-const apiBaseUrl = import.meta.env.VITE_API_BASE_URL
-
-const cpWorks = ref('')
-const cpSongs = ref('')
-
 onMounted(async () => {
-  const res = await fetch(`${apiBaseUrl}/api/details/${route.params.cpName}`)
-  data.value = await res.json()
+  // 2つのJSONを並行して取得
+  const [cpRes, indRes] = await Promise.all([
+    fetch('/data/cp_data.josn'),
+    fetch('/data/individual_data.json')
+  ])
 
-  if (data.value.cp) {
-    cpWorks.value = data.value.cp.出演作品 ? data.value.cp.出演作品.split('|').join(', ') : ''
-    cpSongs.value = data.value.cp.曲 ? data.value.cp.曲.split('|').join(', ') : ''
+  const cpList = await cpRes.json()
+  const individualsList = await indRes.json()
+
+  const cpName = route.params.cpName
+
+  // 指定されたCP名に該当するCPデータと個人情報を取得
+  const cp = cpList.find(item => item.CP名 === cpName)
+  const members = individualsList.filter(item => item.CP名 === cpName)
+
+  data.value = {
+    cp,
+    individuals: members
   }
 })
 </script>

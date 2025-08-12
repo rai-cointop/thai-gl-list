@@ -16,10 +16,8 @@ import { useRouter } from 'vue-router'
 const individuals = ref([])
 const router = useRouter()
 
-const apiBaseUrl = import.meta.env.VITE_API_BASE_URL
-
 onMounted(async () => {
-  const res = await fetch(`${apiBaseUrl}/api/individuals`)
+  const res = await fetch('/data/individual_data.json')
   individuals.value = await res.json()
 })
 
