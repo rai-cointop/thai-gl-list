@@ -3,16 +3,61 @@
     "CP名": "MilkLove",
     "事務所": "GMMTV",
     "ペア名": "MilkLove",
-    "画像": "milklove.png",
-    "出演作品": "Bad Buddy|23.5| Magic of Zero",
-    "曲": "Tilt|Shot-Feel"
+    "画像": ["milklove.png"],
+    "出演作品": [
+      { "name": "Bad Buddy", "url": "http://xn--youtube-p43f7u.com/playlist?list=PLszepnkojZI6lCmTTYwOiavfvGAZg6_Bb" },
+      { "name": "23.5", "url": "https://www.telasa.jp/series/13653" },
+      { "name": "Magic of Zero", "url": "https://www.youtube.com/watch?v=Cw8bKydjDzQ&list=PLYYyUhZKiEj5oIQP-jlkzb31zKdV5yeNq" }
+    ],
+    "曲": [
+      { "name": "Tilt", "url": "https://www.youtube.com/watch?v=LAZpP0_w23k&list=RDLAZpP0_w23k&start_radio=1" },
+      { "name": "Shot-Feel", "url": "https://www.youtube.com/watch?v=0teLUM61UMY&list=RD0teLUM61UMY&start_radio=1" },
+      { "name": "My Only Champion", "url": "https://www.youtube.com/watch?v=Jpih2TjgZGM&list=RDJpih2TjgZGM&start_radio=1" }
+    ]
   },
   {
     "CP名": "NamtanFilm",
     "事務所": "GMMTV",
     "ペア名": "NamtanFilm",
-    "画像": "namtanfilm.png",
-    "出演作品": "Pluto",
-    "曲": "Pulto|A Princess Tale"
+    "画像": ["namtanfilm.png", "namtanfilm2.jpg", "namtanfilm3.jpg", "namtanfilm4.jpg"],
+    "出演作品": [
+      { "name": "Pluto", "url": "https://www.youtube.com/playlist?list=PLszepnkojZI6L1DHV2vEaGdjo_QkQizF_" },
+      { "name": "Ploy’s Yearbook", "url": "https://www.youtube.com/playlist?list=PLszepnkojZI5mdbUfIrr5ery8asF_1hRM" },
+      { "name": "Last Twilight", "url": "https://tv.apple.com/us/show/law-less/umc.cmc.1753wxjhf4tao5od95t50gt1i" }
+    ],
+    "曲": [
+      { "name": "Pulto", "url": "https://www.youtube.com/watch?v=I_wl4yurk1U&list=RDI_wl4yurk1U&start_radio=1" },
+      { "name": "A Princess Tale", "url": "https://www.youtube.com/watch?v=AMzlTbjBLDo&list=RDAMzlTbjBLDo&start_radio=1" }
+    ]
+  },
+  {
+    "CP名": "FreenBecky",
+    "事務所": "Idol Factory",
+    "ペア名": "FreenBecky",
+    "画像": ["freenbecky.png"],
+    "出演作品": [
+      { "name": "Secret Crush on You", "url": "https://www.youtube.com/playlist?list=PL4D0KlUVq4IyFO4dIy1hyD_M5hv2WNsEd" },
+      { "name": "Gap The Series", "url": "https://www.telasa.jp/series/15037" },
+      { "name": "The Loyal Pin", "url": "https://www.telasa.jp/series/14993" },
+      { "name": "Uranus 2324", "url": "https://www.youtube.com/watch?v=x8Fd8qMbqw4" }
+    ],
+    "曲": [
+      { "name": "Pink Theory", "url": "https://www.youtube.com/watch?v=lvBRWn8qldg&list=RDlvBRWn8qldg&start_radio=1" },
+      { "name": "No More Blues", "url": "https://www.youtube.com/watch?v=z8i7tn6o4zI&list=RDz8i7tn6o4zI&start_radio=1" },
+      { "name": "他準備中", "url": "https://www.youtube.com/@IDOLFACTORY" }
+    ]
+  },
+  {
+    "CP名": "LingOrm",
+    "事務所": "Channel 3",
+    "ペア名": "LingOrm",
+    "画像": ["lingorm.png"],
+    "出演作品": [
+      { "name": "The Secret of Us", "url": "https://ch3plus.com/drama/1601" },
+      { "name": "Only You", "url": "https://ch3plus.com/drama/1718" }
+    ],
+    "曲": [
+      { "name": "準備中", "url": "https://www.youtube.com/@CH3Plus" }
+    ]
   }
 ]

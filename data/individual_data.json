@@ -1,35 +1,167 @@
 [
-    {
-      "名前": "Milk Pansa Vosbein",
-      "CP名": "MilkLove",
-      "誕生日": "1996年7月31日",
-      "身長": "170 cm",
-      "絵文字": "緑のハート",
-      "画像": "milk.jpg"
-    },
-    {
-      "名前": "Love Pattranite Limpatiyakorn",
-      "CP名": "MilkLove",
-      "誕生日": "2000年5月23日",
-      "身長": "156 cm",
-      "絵文字": "ピンクのキラキラハート",
-      "画像": "love.jpg"
-    },
-    {
-      "名前": "Namtan Tipnaree Weerawatnodom",
-      "CP名": "NamtanFilm",
-      "誕生日": "1996年7月1日",
-      "身長": "169 cm",
-      "絵文字": "白のハート",
-      "画像": "namtan.jpg"
-    },
-    {
-      "名前": "Film Rachanun Mahawan",
-      "CP名": "NamtanFilm",
-      "誕生日": "2000年7月14日",
-      "身長": "164 cm",
-      "絵文字": "包帯のハート",
-      "画像": "film.png"
+  {
+    "名前": "Freen Sarocha Chankimha",
+    "CP名": "FreenBecky",
+    "誕生日": "1998年8月8日",
+    "身長": "167 cm",
+    "絵文字": "🐰🌷",
+    "画像": ["freen.jpg", "freen_hover.jpg"],
+    "hover画像": "freen_hover.jpg",
+    "出演作品": [
+      { "name": "Rider", "url": "https://www.youtube.com/watch?v=1QEj0097MZ0" }
+    ],
+    "曲": [
+      { "name": "準備中", "url": "https://www.youtube.com/@IDOLFACTORY" }
+    ],
+    "SNS": {
+      "instagram": "https://www.instagram.com/srchafreen/",
+      "x": "https://x.com/srchafreen",
+      "tiktok": "https://www.tiktok.com/@srchafreen"
     }
-  ]
-  
+  },{
+    "名前": "Becky Rebecca Patricia Armstrong",
+    "CP名": "FreenBecky",
+    "誕生日": "2002年12月5日",
+    "身長": "165 cm",
+    "絵文字": "🦦🧚‍♂️",
+    "画像": ["becky.jpg", "becky_hover.jpg"],
+    "hover画像": "becky_hover.jpg",
+    "出演作品": [
+      { "name": "'4 ป่าช้า' (Graveyard Horror)", "url": "https://www.youtube.com/watch?v=w7zETJLeMZI" }
+    ],
+    "曲": [
+      { "name": "準備中", "url": "https://www.youtube.com/@IDOLFACTORY" }
+    ],
+    "SNS": {
+      "instagram": "https://www.instagram.com/beccca/",
+      "x": "https://x.com/AngelssBecky",
+      "tiktok": "https://www.tiktok.com/@angelssbecky"
+    }
+  },
+  {
+    "名前": "Namtan Tipnaree Weerawatnodom",
+    "CP名": "NamtanFilm",
+    "誕生日": "1996年7月1日",
+    "身長": "169 cm",
+    "絵文字": "🤍🩵",
+    "画像": ["namtan.jpg", "namtan_hover.jpg", "namtan_2.jpg"],
+    "hover画像": "namtan_hover.jpg",
+    "出演作品": [
+      { "name": "ENIGMA BLACK STAGE", "url": "https://www.netflix.com/title/82056654" },
+      { "name": "LAW-LESS", "url": "https://tv.apple.com/us/show/law-less/umc.cmc.1753wxjhf4tao5od95t50gt1i" },
+      { "name": "Enigma", "url": "https://www.youtube.com/playlist?list=PLszepnkojZI72VWZ3ZCBjwR0Nz3Y1wy7V" },
+      { "name": "他準備中", "url": "https://www.youtube.com/@gmmtv" }
+    ],
+    "曲": [
+      { "name": "Somewhere only we know", "url": "https://www.youtube.com/watch?v=XxdiiAnTUxo&list=RDXxdiiAnTUxo&start_radio=1" },
+      { "name": "Your Story", "url": "https://www.youtube.com/watch?v=hsvQg5JSDHU&list=RDhsvQg5JSDHU&start_radio=1" },
+      { "name": "ถ้าเราไม่รู้จักกัน", "url": "https://www.youtube.com/watch?v=X9PQujiqRPo&list=RDX9PQujiqRPo&start_radio=1" }
+    ],
+    "SNS": {
+      "instagram": "https://www.instagram.com/namtan.tipnaree/",
+      "x": "https://x.com/NamtanTipnaree",
+      "tiktok": "https://www.tiktok.com/@namtantipnaree"
+    }
+  },
+  {
+    "名前": "Film Rachanun Mahawan",
+    "CP名": "NamtanFilm",
+    "誕生日": "2000年7月14日",
+    "身長": "164 cm",
+    "絵文字": "❤️‍🩹💛",
+    "画像": ["film.png", "film_hover.jpg"],
+    "hover画像": "film_hover.jpg",
+    "出演作品": [
+      { "name": "準備中", "url": "https://www.youtube.com/@gmmtv" }
+    ],
+    "曲": [
+      { "name": "Linger", "url": "https://www.youtube.com/watch?v=saSPFSwHbrk&list=RDsaSPFSwHbrk&start_radio=1" },
+      { "name": "First Love", "url": "https://www.youtube.com/watch?v=HI8z03beTtI&list=RDHI8z03beTtI&start_radio=1" }
+    ],
+    "SNS": {
+      "instagram": "https://www.instagram.com/fr.racha/",
+      "x": "https://x.com/filmracha",
+      "tiktok": "https://www.tiktok.com/@fr.racha"
+    }
+  },
+  {
+    "名前": "Milk Pansa Vosbein",
+    "CP名": "MilkLove",
+    "誕生日": "1996年7月31日",
+    "身長": "170 cm",
+    "絵文字": "💚",
+    "画像": ["milk.jpg", "milk_hover.jpg"],
+    "hover画像": "milk_hover.jpg",
+    "出演作品": [
+      { "name": "準備中", "url": "https://www.youtube.com/@gmmtv" }
+    ],
+    "曲": [
+      { "name": "-", "url": "-" }
+    ],
+    "SNS": {
+      "instagram": "https://www.instagram.com/panly.v/",
+      "x": "https://x.com/panlyyy",
+      "tiktok": "https://www.tiktok.com/@panly.v"
+    }
+  },
+  {
+    "名前": "Love Pattranite Limpatiyakorn",
+    "CP名": "MilkLove",
+    "誕生日": "2000年5月23日",
+    "身長": "156 cm",
+    "絵文字": "💖",
+    "画像": ["love.jpg", "love_hover.jpg"],
+    "hover画像": "love_hover.jpg",
+    "出演作品": [
+      { "name": "準備中", "url": "https://www.youtube.com/@gmmtv" }
+    ],
+    "曲": [
+      { "name": "-", "url": "-" }
+    ],
+    "SNS": {
+      "instagram": "https://www.instagram.com/loverrukk/",
+      "x": "https://x.com/loverrukk",
+      "tiktok": "https://www.tiktok.com/@luvrrukk"
+    }
+  },
+  {
+    "名前": "Lingling Sirilak Kwong",
+    "CP名": "LingOrm",
+    "誕生日": "1995年5月11日",
+    "身長": "168 cm",
+    "絵文字": "?",
+    "画像": ["lingling.jpg", "lingling_hover.jpg"],
+    "hover画像": "lingling_hover.jpg",
+    "出演作品": [
+      { "name": "準備中", "url": "https://www.youtube.com/@CH3Plus" }
+    ],
+    "曲": [
+      { "name": "準備中", "url": "https://www.youtube.com/@CH3Plus" }
+    ],
+    "SNS": {
+      "instagram": "https://www.instagram.com/linglingkwong/",
+      "x": "https://x.com/linglingsirilak",
+      "tiktok": "https://www.tiktok.com/@linglingkwong"
+    }
+  },
+  {
+    "名前": "Orm Kornnaphat Sethratanapong",
+    "CP名": "LingOrm",
+    "誕生日": "2002年5月27日",
+    "身長": "173 cm",
+    "絵文字": "?",
+    "画像": ["orm.jpg", "orm_hover.jpg"],
+    "hover画像": "orm_hover.jpg",
+    "出演作品": [
+      { "name": "準備中", "url": "https://www.youtube.com/@CH3Plus" }
+    ],
+    "曲": [
+      { "name": "準備中", "url": "https://www.youtube.com/@CH3Plus" }
+    ],
+    "SNS": {
+      "instagram": "https://www.instagram.com/orm.kornnaphat/",
+      "x": "https://x.com/ormmormm",
+      "tiktok": "https://www.tiktok.com/@ormkornnaphat"
+    }
+  }
+]
